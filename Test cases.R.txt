@@ -1,0 +1,10 @@
+# Test case for factorial function
+test_that("factorial function returns correct output for valid input", {
+ expect_equal(factorial(0), 1)
+ expect_equal(factorial(1), 1)
+ expect_equal(factorial(5), 120)
+})
+
+test_that("factorial function throws error for negative input", {
+ expect_error(factorial(-1), "Error: cannot calculate factorial of a negative number")
+})
